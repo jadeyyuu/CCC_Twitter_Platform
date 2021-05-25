@@ -1,4 +1,4 @@
-# CCC_group30_Django Backend
+# Web_server
 
 ## 1.Prepare ENV
 Django==3.2.3  
