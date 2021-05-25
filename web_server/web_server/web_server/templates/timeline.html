@@ -1,0 +1,1900 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="Xinyu Zeng" />
+        <title>CCC Team30 - Timeline</title>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- <link href="{% static 'css/styles.css' %}" rel="stylesheet" /> -->
+        <link href="{% static 'css/timeline.css' %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a class="js-scroll-trigger" href="#page-top">CCC Team 30</a></li>
+                <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#page-top">This Scenario</a></li>
+                <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#distribution">Distribution</a></li>
+                <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#timeline">Timeline</a></li>
+                <li id="back" class="sidebar-nav-item"><a class="js-scroll-trigger" >Back To Home</a></li>
+            </ul>
+        </nav>
+        <!-- Header-->
+        <header class="masthead d-flex">
+            <div class="main_container text-left my-auto">
+                <h1 class="mb-1">Covid-19 <br /> Timeline</h1>
+                <h3 class="mb-5" style="color:white" ><em>The hot topics during the Covid-19 pandemic</em></h3>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#distribution">Learn More</a>
+            </div>
+            <div class="overlay"></div>
+        </header>
+        <!-- distribution-->
+        <section class="content-section" id="distribution">
+            <div class="container img_center">
+                {% autoescape off %}
+                {{ multi_chart_timeline.Cases_bar }}
+                {% endautoescape %}
+            </div>
+        </section>
+
+        <!-- timeline-->
+        <section class="content-section bg-light" id="timeline">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10 col-12">
+                        <div class="timeline timeline-line-solid">
+                            <span class="timeline-label">
+                                <span class="label">March 2020</span>
+                            </span>
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget has-shadow">
+                                        <div class="widget-header d-flex align-items-center">
+                                            <div class="user-image">
+                                                <img class="rounded-circle" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="...">
+                                            </div>
+                                            <div class="d-flex flex-column mr-auto">
+                                                <div class="title">
+                                                    <span class="username">CCC Team 30</span> posted an image
+                                                </div>
+                                            </div>
+                                            <div class="widget-options">
+                                                <div class="dropdown">
+                                                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                                                        <i class="la la-ellipsis-h"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-edit"></i>Edit Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-trash"></i>Delete Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-bell-slash"></i>Disable Notifications
+                                                        </a>
+                                                        <a href="#" class="dropdown-item faq">
+                                                            <i class="la la-question-circle"></i>FAQ
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-body">
+                                            <div class="content-img">
+                                                <a href="#"><img id="myImg" src="{% static 'img/WordCloud/March.png' %}" class="img-fluid" alt="..."></a>
+                                            </div>
+
+                                            <!-- The Modal -->
+                                            <div id="myModal" class="modal">
+                                              <!-- The Close Button -->
+                                              <span class="close">&times;</span>
+                                              <!-- Modal Content (The Image) -->
+                                              <img class="modal-content" id="img01">
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-footer d-flex align-items-center">
+                                            <div class="col no-padding d-flex justify-content-start">
+                                                <div class="users-like">
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col no-padding d-flex justify-content-end">
+                                                <div class="meta">
+                                                    <ul>
+                                                        <li><a href="#"><i class="la la-comment"></i><span class="numb">38</span></a></li>
+                                                        <li><a href="#"><i class="la la-heart"></i><span class="numb">94</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="time-left">5:50PM - March 31, 2020 Twitter App</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point" style="background-color: #00aced; color: #00aced;"></div>
+                                <div class="timeline-event">
+                                    <div class="widget icon-widget has-shadow" style="background-color: #00aced;">
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Formula 1 Car Racing</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>Race week 🙌🏼🇦🇺🏁 #VB77 #F1 #AustralianGP @MercedesAMGF1 @F1 📷    @SebastianKawka https://t.co/GCjsNf3YoK</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">51</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">223</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">4222</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Formula 1 Car Racing</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>Good morning Melbs 👋Kicking off our #AusGP weekend with the lovely crew @MercedesBenz Australia!Thanks for the warm welcome 😁 </i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">30</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">97</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">1695</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Covid-19</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>I now have three friends in quarantine for COVID-19, one is very sick at home waiting test results from the hospital and two are asymptomatic but forced to isolate bc of contact. If this is not the same for you today, it will be tomorrow.</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">40</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">10</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">305</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time-right">8:30PM - March 31, 2020 Twitter App</div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget icon-widget has-shadow">
+                                        <div class="widget-body">
+                                            <div class="media">
+                                                <div class="media-left align-self-center mr-3">
+                                                    <a href="#">
+                                                        <img src="{% static 'img/people/Richard.jpeg' %}" style="width: 50px;" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    Richard Sinnott send you a friend request
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time-left">47 min ago</div>
+                                </div>
+                            </div>
+
+                            <!-- April -->
+                            <span class="timeline-label">
+                                <span class="label">April 2020</span>
+                            </span>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget has-shadow">
+                                        <div class="widget-header d-flex align-items-center">
+                                            <div class="user-image">
+                                                <img class="rounded-circle" src="{% static 'img/people/group.png' %}" alt="...">
+                                            </div>
+                                            <div class="d-flex flex-column mr-auto">
+                                                <div class="title">
+                                                    <span class="username">CCC Team 30</span> posted an image
+                                                </div>
+                                            </div>
+                                            <div class="widget-options">
+                                                <div class="dropdown">
+                                                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                                                        <i class="la la-ellipsis-h"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-edit"></i>Edit Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-trash"></i>Delete Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-bell-slash"></i>Disable Notifications
+                                                        </a>
+                                                        <a href="#" class="dropdown-item faq">
+                                                            <i class="la la-question-circle"></i>FAQ
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-body">
+                                            <div class="content-img">
+                                                <img id="myImg2" src="{% static 'img/WordCloud/April.png' %}" class="img-fluid" alt="...">
+                                            </div>
+
+                                            <!-- The Modal  -->
+                                            <div id="myModal2" class="modal">
+                                               <!-- The Close Button -->
+                                              <span class="close2">&times;</span>
+                                              <!-- Modal Content (The Image) -->
+                                              <img class="modal-content" id="img02">
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-footer d-flex align-items-center">
+                                            <div class="col no-padding d-flex justify-content-start">
+                                                <div class="users-like">
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col no-padding d-flex justify-content-end">
+                                                <div class="meta">
+                                                    <ul>
+                                                        <li><a href="#"><i class="la la-comment"></i><span class="numb">22</span></a></li>
+                                                        <li><a href="#"><i class="la la-heart"></i><span class="numb">88</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="time-right">6:00PM - April 30, 2020 Twitter App</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point" style="background-color: #00aced; color: #00aced;"></div>
+                                <div class="timeline-event">
+                                    <div class="widget icon-widget has-shadow" style="background-color: #00aced;">
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> #  Artist creation</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>New Work for Taking Shape 🖤</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">20</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">77</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">1940</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # KOL</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>The thing I love about the Fr**ndlyJ*rdies and Jo* H*ldrebrand feud is that I'm pretty sure Joe thinks of himself as TV's Jordan</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">29</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">26</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">583</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b>Employment</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>Agree with @sallymcmanus re casual workers.
+                                                        10 months ago I employed a 52 y/o woman who is one of the hardest workers I've met.
+                                                        Battled her whole life a single mum of 3.
+                                                        She deserves #jobkeeper
+                                                         </i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">4</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">68</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">309</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time-left">8:30PM - April 31, 2020 Twitter App</div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget has-shadow">
+                                        <div class="alert alert-success" role="alert">
+                                            <strong>Hey!</strong> This is a success alert
+                                        </div>
+                                    </div>
+                                    <div class="time-right">9:30PM - April 31, 2020 Twitter App</div>
+                                </div>
+                            </div>
+
+                            <!-- May -->
+
+                            <span class="timeline-label">
+                                <span class="label">May 2020</span>
+                            </span>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget has-shadow">
+                                        <div class="widget-header d-flex align-items-center">
+                                            <div class="user-image">
+                                                <img class="rounded-circle" src="{% static 'img/people/group.png' %}" alt="...">
+                                            </div>
+                                            <div class="d-flex flex-column mr-auto">
+                                                <div class="title">
+                                                    <span class="username">CCC Team 30</span> posted an image
+                                                </div>
+                                            </div>
+                                            <div class="widget-options">
+                                                <div class="dropdown">
+                                                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                                                        <i class="la la-ellipsis-h"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-edit"></i>Edit Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-trash"></i>Delete Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-bell-slash"></i>Disable Notifications
+                                                        </a>
+                                                        <a href="#" class="dropdown-item faq">
+                                                            <i class="la la-question-circle"></i>FAQ
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-body">
+                                            <div class="content-img">
+                                                <img id="myImg3" src="{% static 'img/WordCloud/May.png' %}" class="img-fluid" alt="...">
+                                            </div>
+
+                                            <!-- The Modal  -->
+                                            <div id="myModal3" class="modal">
+                                               <!-- The Close Button -->
+                                              <span class="close3">&times;</span>
+                                              <!-- Modal Content (The Image) -->
+                                              <img class="modal-content" id="img03">
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-footer d-flex align-items-center">
+                                            <div class="col no-padding d-flex justify-content-start">
+                                                <div class="users-like">
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col no-padding d-flex justify-content-end">
+                                                <div class="meta">
+                                                    <ul>
+                                                        <li><a href="#"><i class="la la-comment"></i><span class="numb">22</span></a></li>
+                                                        <li><a href="#"><i class="la la-heart"></i><span class="numb">88</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="time-left">6:00PM - May 30, 2020 Twitter App</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point" style="background-color: #00aced; color: #00aced;"></div>
+                                <div class="timeline-event">
+                                    <div class="widget icon-widget has-shadow" style="background-color: #00aced;">
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> Covid-19 Source of outbreak</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>Greg Sheridan on #insiders says that if Aust had been the source of an outbreak we'd have allowed Intetnational inspectors in... good...what about those needing to investigate our treatment of asylum seekers and refugees?</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">25</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">424</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">1250</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Race equality Black Lives Matter</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>A lot of people seem far more upset about angry protesters than another black man killed by police. </i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">24</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">113</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">1192</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Covid-19 Government policy</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>Vic Premier @DanielAndrewsMP has indicated it won't be until Monday before he announces any loosening of restrictions in Victoria, regardless of what comes out of National Cabinet tomorrow. So, Mother's Day gatherings may have to be postponed. #COVID19Aus</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">193</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">144</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">738</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time-right">8:30PM - May 31, 2020 Twitter App</div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget has-shadow">
+                                        <div class="alert alert-success" role="alert">
+                                            <strong>Hey!</strong> This is a success alert
+                                        </div>
+                                    </div>
+                                    <div class="time-left">9:30PM - May 31, 2020 Twitter App</div>
+                                </div>
+                            </div>
+
+                            <!-- June -->
+                            <span class="timeline-label">
+                                <span class="label">June 2020</span>
+                            </span>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget has-shadow">
+                                        <div class="widget-header d-flex align-items-center">
+                                            <div class="user-image">
+                                                <img class="rounded-circle" src="{% static 'img/people/group.png' %}" alt="...">
+                                            </div>
+                                            <div class="d-flex flex-column mr-auto">
+                                                <div class="title">
+                                                    <span class="username">CCC Team 30</span> posted an image
+                                                </div>
+                                            </div>
+                                            <div class="widget-options">
+                                                <div class="dropdown">
+                                                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                                                        <i class="la la-ellipsis-h"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-edit"></i>Edit Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-trash"></i>Delete Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-bell-slash"></i>Disable Notifications
+                                                        </a>
+                                                        <a href="#" class="dropdown-item faq">
+                                                            <i class="la la-question-circle"></i>FAQ
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-body">
+                                            <div class="content-img">
+                                                <img id="myImg4" src="{% static 'img/WordCloud/June.png' %}" class="img-fluid" alt="...">
+                                            </div>
+
+                                            <!-- The Modal  -->
+                                            <div id="myModal4" class="modal">
+                                               <!-- The Close Button -->
+                                              <span class="close4">&times;</span>
+                                              <!-- Modal Content (The Image) -->
+                                              <img class="modal-content" id="img04">
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-footer d-flex align-items-center">
+                                            <div class="col no-padding d-flex justify-content-start">
+                                                <div class="users-like">
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col no-padding d-flex justify-content-end">
+                                                <div class="meta">
+                                                    <ul>
+                                                        <li><a href="#"><i class="la la-comment"></i><span class="numb">22</span></a></li>
+                                                        <li><a href="#"><i class="la la-heart"></i><span class="numb">88</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="time-right">6:00PM - June 30, 2020 Twitter App</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point" style="background-color: #00aced; color: #00aced;"></div>
+                                <div class="timeline-event">
+                                    <div class="widget icon-widget has-shadow" style="background-color: #00aced;">
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # KOL</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>@Remember_Sarah don't let your dreams be dreams ~ https://t.co/wcvxtwApyq</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">27</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">15</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">708</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # KOL</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>Thanks to everyone for the messages this morning. It has been a terrific 10 years. He's something I wrote about my decade on @BreakfastNews. https://t.co/RToFkMeSFH </i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">33</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">24</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">500</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # KOL</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>One of my favourite quotes from my time in public life is "it's always the right time to do the right thing." Today, tomorrow, every day.</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">19</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">59</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">429</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time-left">8:30PM - June 31, 2020 Twitter App</div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget has-shadow">
+                                        <div class="alert alert-success" role="alert">
+                                            <strong>Hey!</strong> This is a success alert
+                                        </div>
+                                    </div>
+                                    <div class="time-right">9:30PM - June 31, 2020 Twitter App</div>
+                                </div>
+                            </div>
+                            <!-- July -->
+                            <span class="timeline-label">
+                                <span class="label">July 2020</span>
+                            </span>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget has-shadow">
+                                        <div class="widget-header d-flex align-items-center">
+                                            <div class="user-image">
+                                                <img class="rounded-circle" src="{% static 'img/people/group.png' %}" alt="...">
+                                            </div>
+                                            <div class="d-flex flex-column mr-auto">
+                                                <div class="title">
+                                                    <span class="username">CCC Team 30</span> posted an image
+                                                </div>
+                                            </div>
+                                            <div class="widget-options">
+                                                <div class="dropdown">
+                                                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                                                        <i class="la la-ellipsis-h"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-edit"></i>Edit Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-trash"></i>Delete Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-bell-slash"></i>Disable Notifications
+                                                        </a>
+                                                        <a href="#" class="dropdown-item faq">
+                                                            <i class="la la-question-circle"></i>FAQ
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-body">
+                                            <div class="content-img">
+                                                <img id="myImg5" src="{% static 'img/WordCloud/July.png' %}" class="img-fluid" alt="...">
+                                            </div>
+
+                                            <!-- The Modal  -->
+                                            <div id="myModal5" class="modal">
+                                               <!-- The Close Button -->
+                                              <span class="close5">&times;</span>
+                                              <!-- Modal Content (The Image) -->
+                                              <img class="modal-content" id="img05">
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-footer d-flex align-items-center">
+                                            <div class="col no-padding d-flex justify-content-start">
+                                                <div class="users-like">
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col no-padding d-flex justify-content-end">
+                                                <div class="meta">
+                                                    <ul>
+                                                        <li><a href="#"><i class="la la-comment"></i><span class="numb">22</span></a></li>
+                                                        <li><a href="#"><i class="la la-heart"></i><span class="numb">88</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="time-left">6:00PM - July 30, 2020 Twitter App</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point" style="background-color: #00aced; color: #00aced;"></div>
+                                <div class="timeline-event">
+                                    <div class="widget icon-widget has-shadow" style="background-color: #00aced;">
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Covid-19 Government Policy</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>Congratulations! NSW Premier Gladys Berejiklian correct. You can't shut down every time you have a cluster of cases. Here in Victoria we must learn to manage the virus and keep our lights on. </i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">595</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">285</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">1600</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # KOL</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>Guess that leaves little old us, @julia_zemiro! 💓  https://t.co/inBIsgaNcI </i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">28</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">46</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">1190</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Blue Content</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>Hello hello to my penis! 🤟🏻 https://t.co/cNgKcPbAkQ</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">14</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">164</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">1023</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time-right">8:30PM - July 31, 2020 Twitter App</div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget has-shadow">
+                                        <div class="alert alert-success" role="alert">
+                                            <strong>Hey!</strong> This is a success alert
+                                        </div>
+                                    </div>
+                                    <div class="time-left">9:30PM - July 31, 2020 Twitter App</div>
+                                </div>
+                            </div>
+
+                            <!-- August -->
+                            <span class="timeline-label">
+                                <span class="label">August 2020</span>
+                            </span>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget has-shadow">
+                                        <div class="widget-header d-flex align-items-center">
+                                            <div class="user-image">
+                                                <img class="rounded-circle" src="{% static 'img/people/group.png' %}" alt="...">
+                                            </div>
+                                            <div class="d-flex flex-column mr-auto">
+                                                <div class="title">
+                                                    <span class="username">CCC Team 30</span> posted an image
+                                                </div>
+                                            </div>
+                                            <div class="widget-options">
+                                                <div class="dropdown">
+                                                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                                                        <i class="la la-ellipsis-h"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-edit"></i>Edit Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-trash"></i>Delete Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-bell-slash"></i>Disable Notifications
+                                                        </a>
+                                                        <a href="#" class="dropdown-item faq">
+                                                            <i class="la la-question-circle"></i>FAQ
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-body">
+                                            <div class="content-img">
+                                                <img id="myImg6" src="{% static 'img/WordCloud/August.png' %}" class="img-fluid" alt="...">
+                                            </div>
+
+                                            <!-- The Modal  -->
+                                            <div id="myModal6" class="modal">
+                                               <!-- The Close Button -->
+                                              <span class="close6">&times;</span>
+                                              <!-- Modal Content (The Image) -->
+                                              <img class="modal-content" id="img06">
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-footer d-flex align-items-center">
+                                            <div class="col no-padding d-flex justify-content-start">
+                                                <div class="users-like">
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col no-padding d-flex justify-content-end">
+                                                <div class="meta">
+                                                    <ul>
+                                                        <li><a href="#"><i class="la la-comment"></i><span class="numb">22</span></a></li>
+                                                        <li><a href="#"><i class="la la-heart"></i><span class="numb">88</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="time-right">6:00PM - August 30, 2020 Twitter App</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point" style="background-color: #00aced; color: #00aced;"></div>
+                                <div class="timeline-event">
+                                    <div class="widget icon-widget has-shadow" style="background-color: #00aced;">
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Usage of social media</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>Our hottest set yet!!! 🔥🔥🔥  NOT for the faint of heart ❤️  With exclusive photo's on both @stefania_model &amp; My Patreon's! ❤️ </i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">27</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">637</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">2140</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Covid-19 Government policy</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>He fucking what https://t.co/WB4LgdmnrE </i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">34</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">237</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">1384</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # AFL Foot Games</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>Come on Gil reverse the Mitch Cleary decision. This isn's North Korea! I'd be more inclined to stand down the person who made this decision.</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">33</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">40</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">739</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time-left">8:30PM - August 31, 2020 Twitter App</div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget has-shadow">
+                                        <div class="alert alert-success" role="alert">
+                                            <strong>Hey!</strong> This is a success alert
+                                        </div>
+                                    </div>
+                                    <div class="time-right">9:30PM - August 31, 2020 Twitter App</div>
+                                </div>
+                            </div>
+
+                            <!-- September -->
+
+                            <span class="timeline-label">
+                                <span class="label">September 2020</span>
+                            </span>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget has-shadow">
+                                        <div class="widget-header d-flex align-items-center">
+                                            <div class="user-image">
+                                                <img class="rounded-circle" src="{% static 'img/people/group.png' %}" alt="...">
+                                            </div>
+                                            <div class="d-flex flex-column mr-auto">
+                                                <div class="title">
+                                                    <span class="username">CCC Team 30</span> posted an image
+                                                </div>
+                                            </div>
+                                            <div class="widget-options">
+                                                <div class="dropdown">
+                                                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                                                        <i class="la la-ellipsis-h"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-edit"></i>Edit Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-trash"></i>Delete Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-bell-slash"></i>Disable Notifications
+                                                        </a>
+                                                        <a href="#" class="dropdown-item faq">
+                                                            <i class="la la-question-circle"></i>FAQ
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-body">
+                                            <div class="content-img">
+                                                <img id="myImg7" src="{% static 'img/WordCloud/September.png' %}" class="img-fluid" alt="...">
+                                            </div>
+
+                                            <!-- The Modal  -->
+                                            <div id="myModal7" class="modal">
+                                               <!-- The Close Button -->
+                                              <span class="close7">&times;</span>
+                                              <!-- Modal Content (The Image) -->
+                                              <img class="modal-content" id="img07">
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-footer d-flex align-items-center">
+                                            <div class="col no-padding d-flex justify-content-start">
+                                                <div class="users-like">
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col no-padding d-flex justify-content-end">
+                                                <div class="meta">
+                                                    <ul>
+                                                        <li><a href="#"><i class="la la-comment"></i><span class="numb">22</span></a></li>
+                                                        <li><a href="#"><i class="la la-heart"></i><span class="numb">88</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="time-left">6:00PM - September 30, 2020 Twitter App</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point" style="background-color: #00aced; color: #00aced;"></div>
+                                <div class="timeline-event">
+                                    <div class="widget icon-widget has-shadow" style="background-color: #00aced;">
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Covid-19 Medical system</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>In one of my hospitals, it takes 5 days of cleaning to get a #COVID19Vic ward safe to resume elective surgery. That's how infectious this virus is. That's why shortcuts advocated by some experts in journalism, economics &amp; politics need to be politely dismissed. #springst #auspol</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">137</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">2165</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">5838</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Blue content</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>Hello hello my sweet wonderful horny followers and the rest of sexy Twitter! Checked out my OnlyFans lately? </i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">33</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">384</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">2670</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Covid-19 Government Policy</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>Imagine if Dan Andrews started today's conference with "Okay, fuck you all, dickheads. All restrictions lifted. See if I care. Don't come running to me when you get the sniffles."  🎤  drop.</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">227</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">66</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">2237</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time-right">8:30PM - September 31, 2020 Twitter App</div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget has-shadow">
+                                        <div class="alert alert-success" role="alert">
+                                            <strong>Hey!</strong> This is a success alert
+                                        </div>
+                                    </div>
+                                    <div class="time-left">9:30PM - September 31, 2020 Twitter App</div>
+                                </div>
+                            </div>
+
+                            <!-- October -->
+                            <span class="timeline-label">
+                                <span class="label">October 2020</span>
+                            </span>
+
+                                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget has-shadow">
+                                        <div class="widget-header d-flex align-items-center">
+                                            <div class="user-image">
+                                                <img class="rounded-circle" src="{% static 'img/people/group.png' %}" alt="...">
+                                            </div>
+                                            <div class="d-flex flex-column mr-auto">
+                                                <div class="title">
+                                                    <span class="username">CCC Team 30</span> posted an image
+                                                </div>
+                                            </div>
+                                            <div class="widget-options">
+                                                <div class="dropdown">
+                                                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                                                        <i class="la la-ellipsis-h"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-edit"></i>Edit Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-trash"></i>Delete Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-bell-slash"></i>Disable Notifications
+                                                        </a>
+                                                        <a href="#" class="dropdown-item faq">
+                                                            <i class="la la-question-circle"></i>FAQ
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-body">
+                                            <div class="content-img">
+                                                <img id="myImg8" src="{% static 'img/WordCloud/October.png' %}" class="img-fluid" alt="...">
+                                            </div>
+
+                                            <!-- The Modal  -->
+                                            <div id="myModal8" class="modal">
+                                               <!-- The Close Button -->
+                                              <span class="close8">&times;</span>
+                                              <!-- Modal Content (The Image) -->
+                                              <img class="modal-content" id="img08">
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-footer d-flex align-items-center">
+                                            <div class="col no-padding d-flex justify-content-start">
+                                                <div class="users-like">
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col no-padding d-flex justify-content-end">
+                                                <div class="meta">
+                                                    <ul>
+                                                        <li><a href="#"><i class="la la-comment"></i><span class="numb">22</span></a></li>
+                                                        <li><a href="#"><i class="la la-heart"></i><span class="numb">88</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="time-right">6:00PM - October 30, 2020 Twitter App</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point" style="background-color: #00aced; color: #00aced;"></div>
+                                <div class="timeline-event">
+                                    <div class="widget icon-widget has-shadow" style="background-color: #00aced;">
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Blue content</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>On or off?  🍆 🍒 @Luke_ward__ https://t.co/m1dGLqMdrD</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">13</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">232</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">1642</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Covid-19 Government policy</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>Note large ads in the Age bearing many signatures of the extremely wealthy calling for immediate opening up in Victoria. I wonder what their movie is other than greed? </i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">91</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">243</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">1099</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Government leadership</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>Personal opinion: As far as Liberal party leaders and premiers go, Gladys Berejiklian almost certainly the best. Which makes it *even more infuriating* as the evidence piles up that she too was likely complicit in corruption.</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">52</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">85</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">1109</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time-left">8:30PM - October 31, 2020 Twitter App</div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget has-shadow">
+                                        <div class="alert alert-success" role="alert">
+                                            <strong>Hey!</strong> This is a success alert
+                                        </div>
+                                    </div>
+                                    <div class="time-right">9:30PM - October 31, 2020 Twitter App</div>
+                                </div>
+                            </div>
+
+                             <!-- November -->
+
+                            <span class="timeline-label">
+                                <span class="label">November 2020</span>
+                            </span>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget has-shadow">
+                                        <div class="widget-header d-flex align-items-center">
+                                            <div class="user-image">
+                                                <img class="rounded-circle" src="{% static 'img/people/group.png' %}" alt="...">
+                                            </div>
+                                            <div class="d-flex flex-column mr-auto">
+                                                <div class="title">
+                                                    <span class="username">CCC Team 30</span> posted an image
+                                                </div>
+                                            </div>
+                                            <div class="widget-options">
+                                                <div class="dropdown">
+                                                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                                                        <i class="la la-ellipsis-h"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-edit"></i>Edit Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-trash"></i>Delete Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-bell-slash"></i>Disable Notifications
+                                                        </a>
+                                                        <a href="#" class="dropdown-item faq">
+                                                            <i class="la la-question-circle"></i>FAQ
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-body">
+                                            <div class="content-img">
+                                                <img id="myImg9" src="{% static 'img/WordCloud/November.png' %}" class="img-fluid" alt="...">
+                                            </div>
+
+                                            <!-- The Modal  -->
+                                            <div id="myModal9" class="modal">
+                                               <!-- The Close Button -->
+                                              <span class="close9">&times;</span>
+                                              <!-- Modal Content (The Image) -->
+                                              <img class="modal-content" id="img09">
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-footer d-flex align-items-center">
+                                            <div class="col no-padding d-flex justify-content-start">
+                                                <div class="users-like">
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col no-padding d-flex justify-content-end">
+                                                <div class="meta">
+                                                    <ul>
+                                                        <li><a href="#"><i class="la la-comment"></i><span class="numb">22</span></a></li>
+                                                        <li><a href="#"><i class="la la-heart"></i><span class="numb">88</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="time-left">6:00PM - November 30, 2020 Twitter App</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point" style="background-color: #00aced; color: #00aced;"></div>
+                                <div class="timeline-event">
+                                    <div class="widget icon-widget has-shadow" style="background-color: #00aced;">
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Government leadership</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>Australians should never elect someone as stupid as Scott Morrison again. We deserve much better #auspol</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">118</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">268</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">1775</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Covid-19 Government policy</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>I wouldn't say Brett was "born old", but always a smile &amp; a kind word. Like most drs, @VictorianCHO cares deeply for humanity, &amp; combines expertise &amp; ethics well. Victoria has been very fortunate to have his leadership during #Covid19Vic #springst #auspol https://t.co/0qlShqAyvR </i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">34</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">187</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">3601</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Covid-19 Healthcare workers</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>For the 1st time in many months, no #healthcareworker is infected with #COVID19Vic It feels like Armistice Day. I pay tribute to every single one - nurses, doctors, clerks, cleaners, allied health, administrators, security. Your protection must be priority 1. #auspol #springst https://t.co/hGIpjgIdGz</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">21</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">246</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">122</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time-right">8:30PM - November 31, 2020 Twitter App</div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget has-shadow">
+                                        <div class="alert alert-success" role="alert">
+                                            <strong>Hey!</strong> This is a success alert
+                                        </div>
+                                    </div>
+                                    <div class="time-left">9:30PM - November 31, 2020 Twitter App</div>
+                                </div>
+                            </div>
+
+                            <!-- December -->
+                            <span class="timeline-label">
+                                <span class="label">December 2020</span>
+                            </span>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point"></div>
+                                <div class="timeline-event">
+                                    <div class="widget has-shadow">
+                                        <div class="widget-header d-flex align-items-center">
+                                            <div class="user-image">
+                                                <img class="rounded-circle" src="{% static 'img/people/group.png' %}" alt="...">
+                                            </div>
+                                            <div class="d-flex flex-column mr-auto">
+                                                <div class="title">
+                                                    <span class="username">CCC Team 30</span> posted an image
+                                                </div>
+                                            </div>
+                                            <div class="widget-options">
+                                                <div class="dropdown">
+                                                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                                                        <i class="la la-ellipsis-h"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-edit"></i>Edit Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-trash"></i>Delete Post
+                                                        </a>
+                                                        <a href="#" class="dropdown-item">
+                                                            <i class="la la-bell-slash"></i>Disable Notifications
+                                                        </a>
+                                                        <a href="#" class="dropdown-item faq">
+                                                            <i class="la la-question-circle"></i>FAQ
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-body">
+                                            <div class="content-img">
+                                                <img id="myImg10" src="{% static 'img/WordCloud/December.png' %}" class="img-fluid" alt="...">
+                                            </div>
+
+                                            <!-- The Modal  -->
+                                            <div id="myModal10" class="modal">
+                                               <!-- The Close Button -->
+                                              <span class="close10">&times;</span>
+                                              <!-- Modal Content (The Image) -->
+                                              <img class="modal-content" id="img010">
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-footer d-flex align-items-center">
+                                            <div class="col no-padding d-flex justify-content-start">
+                                                <div class="users-like">
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid rounded-circle" alt="...">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col no-padding d-flex justify-content-end">
+                                                <div class="meta">
+                                                    <ul>
+                                                        <li><a href="#"><i class="la la-comment"></i><span class="numb">22</span></a></li>
+                                                        <li><a href="#"><i class="la la-heart"></i><span class="numb">88</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="time-right">6:00PM - December 30, 2020 Twitter App</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point" style="background-color: #00aced; color: #00aced;"></div>
+                                <div class="timeline-event">
+                                    <div class="widget icon-widget has-shadow" style="background-color: #00aced;">
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # Goverment policy</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>Why does our Department of Home Affairs treat asylum seekers in the same manner as prisoners of authoritarian regimes? The Saturday Paper reports Farhad Rahmati as having been subjected to transfer 8 times across 2 States since July 2019. Is this where we have sunk to?</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">56</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">364</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">1239</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # KOL</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>If you wanna be my reg that's fine but you're not allowed to fall in love with me and then not wanna pay anymore because you want it to be 'real' we are not taking that energy into 2021 okay. YES ITS REAL BUT ALSO ITS A FANTA$Y! IM SICK OF IT. I keep losing good clients this way </i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">42</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">133</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">786</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget-body" style="color: #fff;">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-twitter" style="font-size: 4rem;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center">
+                                                    <p><b> # KOL</b></p>
+                                                    <div class=" pl-4 text-border">
+                                                        <i>Miss you and love forever Sinead Pulford 💛 💜 Six years without your laugh, your generous spirit, your inquiring mind and that brilliant cheeky smile. Six years that feels like an eternity but also like just a moment. #angelsholdSP https://t.co/hKnw8jfIWr</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comment"></i><span class="numb">68</span></a></li>
+                                                    <li><a href="#"><i class="la la-retweet"></i><span class="numb">13</span></a></li>
+                                                    <li><a href="#"><i class="la la-heart"></i><span class="numb">993</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time-left">8:30PM - December 31, 2020 Twitter App</div>
+                                </div>
+                            </div>
+
+                            <span class="timeline-label">
+                                <span class="label">Loading</span>
+                            </span>
+                            <div class="timeline-item">
+                                <div class="timeline-point timeline-point" style="background-color: #cc181e; color: #cc181e;"></div>
+                                <div class="timeline-event">
+                                    <div class="widget icon-widget has-shadow">
+                                        <div class="widget-body">
+                                            <div class="media">
+                                                <div class="media-left align-self-center">
+                                                    <i class="la la-youtube" style="font-size: 4rem; color: #cc181e;"></i>
+                                                </div>
+                                                <div class="media-body align-self-center pl-4">
+                                                    New video posted
+                                                    <h3>Video Title</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="widget-footer no-bg no-border pt-0 d-flex justify-content-end">
+                                            <div class="meta" style="font-size: 0.85rem;">
+                                                <ul>
+                                                    <li><a href="#"><i class="la la-comments"></i><span class="numb">38</span></a></li>
+                                                    <li><a href="#"><i class="la la-thumbs-o-up"></i><span class="numb">124</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time-right">38 min ago</div>
+                                </div>
+                            </div>
+                            <span class="timeline-label">
+                                <a class="btn btn-primary btn-xl js-scroll-trigger label" href="emotion.html">Learn More</a>
+                            </span>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Footer -->
+        <footer class="footer text-center">
+            <div class="container">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-youtube"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-0">Copyright &copy; CCC Team30 2021</p>
+            </div>
+        </footer>
+
+        <!-- Scroll to Top Button--> 
+        <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <!-- Custom scripts for this template-->
+        <script src="{% static 'js/scripts.js' %}"></script>
+        <script src="{% static 'js/timeline.js' %}"></script>
+    </body>
+<script>
+    $('#back').on('click', function(){
+    const href = window.location.origin;
+    location.href = href + "/main"
+})
+</script>
+</html>
