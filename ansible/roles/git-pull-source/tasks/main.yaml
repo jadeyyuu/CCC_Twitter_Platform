@@ -1,0 +1,8 @@
+---
+- name: pull latest code from git
+  git:
+    repo: ssh://git@github.com:jadeyyuu/CCC30-Twitter_Platform.git
+    key_file: /home/ubuntu/.ssh/GitHub
+    update: yes
+    dest: '{{ remote_working_directory }}'
+    force: yes

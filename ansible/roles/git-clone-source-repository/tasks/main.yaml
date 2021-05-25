@@ -1,0 +1,27 @@
+---
+- name: add github ssh key
+  copy:
+    src: "config/git_key"
+    dest: /home/ubuntu/.ssh/GitHubKey
+    owner: ubuntu
+    group: ubuntu
+    mode: 0600
+# copy GitHub private key to server
+
+- name: configure ssh to use ansible key for github.com
+  template:
+    src: "config/ssh_config"
+    dest: /home/ubuntu/.ssh/config
+    owner: ubuntu
+    group: ubuntu
+    mode: 0644
+
+- name: Creates ~COMP90024 directory
+  file:
+    path: '{{ remote_working_directory }}'
+    state: directory
+
+- name: clone the source from git
+  shell: git clone git@github.com:jadeyyuu/CCC30-Twitter_Platform.git  --config core.sshCommand="ssh -i /home/ubuntu/.ssh/GitHubKey"
+  args: 
+    chdir: '{{ remote_working_directory }}'

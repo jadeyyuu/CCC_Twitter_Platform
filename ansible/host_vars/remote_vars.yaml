@@ -1,0 +1,39 @@
+---
+# ********************* Common vars **************************************
+project_working_directory: /Users/jade/Documents/unimelb/sm1 2021/CCC COMP90024 Cluster and Cloud Computing /Git/CCC-Group-Project/Ansible
+remote_working_directory: /home/ubuntu/COMP90024
+proxy_address: http://wwwproxy.unimelb.edu.au:8000
+
+# ********************* Ansible ***********************************************
+ansiple_python_interpreter: /usr/bin/python3
+ansible_user: ubuntu
+ansible_ssh_private_key_file: ~/.ssh/app_key
+ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+
+
+# ********************* Git ***********************************************
+repository_name: CCC-Group-Project
+git_repo: /home/ubuntu/CCC-Group-Project/git
+
+# ********************* Docker ********************************************
+enable_docker_remote_control: true
+
+# ********************* CouchDB *******************************************
+couchdb_version: 3.1.1
+couchdb_config_path: /home/ubuntu/couchdb/etc
+couchdb_user: admin
+couchdb_pass: password
+couchdb_share: 4
+couchdb_replica: 3
+couchdb_image: ibmcom/couchdb3:latest
+couchdb_cookie: 'a192aeb9904e6590849337933b000c99' 
+couchdb_uuid: 'a192aeb9904e6590849337933b001159' # to be check
+cluster_name: '_cluster_setup'
+couchdb_container_name: 'couchdb_'
+couchdb_port: 5984
+couchdb_db_name: "live-tweets"
+
+# ********************* Django ********************************************
+
+
+

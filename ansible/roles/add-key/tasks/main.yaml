@@ -1,0 +1,6 @@
+---
+- name: add authorized_keys
+  copy:
+    src: "config/app_key.pem"
+    dest: ~/.ssh/app_key
+    mode: 0600
