@@ -80,7 +80,7 @@ curl -X PUT http://admin:password@172.26.131.236:5984/melb201508/_design/my_ddoc
          emit([created.getFullYear(),created.getMonth(),created.getDate()],doc.text); }}"}}}'
 ```
 Also, in the Apache couchdb we coudld directly edit in the figure below, which is quite convenient.
-```
+
 ![reduce](https://user-images.githubusercontent.com/70568760/119520267-babe7280-bdac-11eb-903c-9ccf162242b3.jpg)
-```
+
 
